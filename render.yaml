@@ -2,7 +2,7 @@ services:
   - type: web
     name: uptimekuma
     env: docker
-    repo: https://github.com/Olyno/uptime-kuma-docker.git
+    repo: https://github.com/Nebulosa-Cat/uptime-kuma
     region: oregon
     plan: starter
     branch: master
