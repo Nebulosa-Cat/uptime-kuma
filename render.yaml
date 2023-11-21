@@ -1,10 +1,12 @@
 services:
   - type: web
-    name: uptimekuma
-    env: docker
+    name: uptime-kuma
+    envVars: docker
+      -key: PORT
+       value: 3001
     repo: https://github.com/Nebulosa-Cat/uptime-kuma
     region: oregon
     plan: starter
     branch: master
-    rootDir: uptimekuma
+    rootDir: uptime-kuma:/app/data
     healthCheckPath: /
